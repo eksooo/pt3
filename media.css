@@ -1,0 +1,7 @@
+@media (min-width:1900px) {
+    .leftinfobar img {
+        position: absolute;
+        left: 300px;
+        z-index: 1;
+    }
+}

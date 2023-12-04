@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: violet;
+}
+.topbar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 50px;
+    background-color: rgb(18, 18, 18);
+    font-size: 20px;
+    z-index: 4;
+}
+.topbar a {
+    color: white;
+    padding: 1rem;
+    transition: 0.2s;
+}
+.topbar a:hover {
+    background-color: violet;
+}
+.oneline {
+    background-color: rgb(18, 18, 18);
+    display: grid;
+    grid-template-columns: 50dvw 50dvw;
+    place-items: center;
+    min-height: 20dvh;
+}
+.leftinfobar {
+    background: url('buildings.png') no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-width: 70dvw;
+    min-height: 20dvh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: rgb(18, 18, 18);
+    border-bottom-right-radius: 500px;
+}
+.leftinfobar li::after {
+    content: 'Trusted News from a Trusted Source';
+    display: block;
+    font-size: 21.5px;
+}
+.leftinfobar img {
+    position: absolute;
+    left: 140px;
+    z-index: 1;
+}
+.rightinfobar input{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    border-bottom: 2px solid white;
+    transition: 0.3s;
+    color: white;
+}
+.rightinfobar input:focus, .rightinfobar input:hover{
+    border-bottom: 3px solid violet;
+}
+.rightinfobar button{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    font-size: inherit;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    font-size: 30px;
+}
+main ul {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 15px;
+    background-color: rgb(27, 27, 27);
+    padding: 0.5rem;
+    box-shadow: 0 3px 3px 3px;
+    z-index: 100;
+}
+main a{
+    color: white;
+    padding: 0.5rem;
+}
+main a{
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+main li a::after {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleY(0);
+    background-color: violet;
+    transition: 0.2s;
+    transform-origin: bottom;
+}
+main li a:hover::after {
+    transform: scaleY(1);
+}
+main {
+    background-color: rgb(18, 18, 18);
+}
+center h1 {
+    color: white;
+    font-size: 40px;
+}
+center h1::after {
+    content: 'ABS-CBN';
+    display: block;
+    font-size: 20px;
+}
+.news section{
+    margin: 1rem;
+}
+.news {
+    display: grid;
+    grid-template-columns: 25dvw 35dvw 25dvw;
+    margin: 0 100px 0 100px;
+    background-color: rgb(43, 43, 43);
+}
+.story {
+    width: auto;
+}
+.story header {
+    background-color: violet;
+    padding: 1rem;
+}
+.story article {
+    border-top: 1px solid gray;
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem;
+    margin: 1rem;
+}
+.story article h1, .headlines article h1 {
+    font-size: 10px;
+    padding: 0.4rem;
+    border-radius: 0 10px 0 10px;
+}
+.story article a{
+    color: white;
+    text-align: justify;
+    transition: 0.3s;
+}
+.story article a:hover{
+    color: rgb(241, 128, 241);
+    text-align: justify;
+}
+.headlines article{
+    margin: 1rem;
+}
+.pagasa {
+    background: url('headline1.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+.population {
+    background: url('headline2.jpeg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+.abraham {
+    background: url('headline3.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+.buzz    {
+    background: url('headline4.jpg') no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+.bball {
+    background: url('headline 5.jpg') no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    height: 300px;
+    width: auto;
+}
+.headlines article a {
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    transition: 0.3s;
+}
+.headlines article a:hover {
+    color: violet;
+    font-size: 16px;
+}
+.ads img{
+    width: 300px;
+}
+
+/* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS */
+/* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS */
+/* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS *//* NEWS ORGANIZING BLOCKS */
+.entertainment {
+    width: 110px;
+    background-color: rgb(255, 85, 85);
+}
+.newsinfo {
+    width: 75px;
+    background-color: rgb(85, 255, 85);
+}
+.sports {
+    width: 60px;
+    background-color: rgb(244, 255, 85);
+}
+.globalnation {
+    width: 105px;
+    background-color: rgb(85, 201, 255);
+}
+.business {
+    width: 75px;
+    background-color: rgb(241, 61, 211);
+}
+/* TRANSITION PART *//* TRANSITION PART *//* TRANSITION PART *//* TRANSITION PART */
+/* TRANSITION PART *//* TRANSITION PART *//* TRANSITION PART *//* TRANSITION PART */
+.reveal {
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
